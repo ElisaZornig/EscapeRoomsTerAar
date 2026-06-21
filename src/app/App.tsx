@@ -313,11 +313,11 @@ export default function App() {
           <div className="w-16 h-1 bg-blue-500 mx-auto mb-8" aria-hidden="true"></div>
           <div className="flex justify-center gap-8 text-sm text-zinc-500 tracking-wide">
             <a 
-              href="tel:+31612345678" 
+              href="tel:+31651235253"
               className="hover:text-blue-500 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1"
-              aria-label="Bel +31 6 1234 5678"
+              aria-label="Bel +31 6 51235253"
             >
-              +31 6 1234 5678
+              +31 6 51235253
             </a>
             <span aria-hidden="true">|</span>
             <a 

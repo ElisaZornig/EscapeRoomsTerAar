@@ -47,7 +47,7 @@ export default function App() {
       features: ['2-5 personen per team (tot 5 teams)', 'Ca. 60 minuten', 'Vanaf 14 jaar', 'Speelbaar in Ter Aar of op locatie', '€45 per school'],
       image: schoolImg,
       imageType: 'imported' as const,
-      visitors: '2,055',
+      visitors: '1,635',
     },
     {
       id: 2,
@@ -57,7 +57,7 @@ export default function App() {
       features: ['Ca. 8-12 jaar', 'Max. 12 deelnemers', 'Ca. 45 minuten', 'Speelbaar in Ter Aar of op locatie', '€14 p.p. (min. 4 personen)'],
       image: boxerImg,
       imageType: 'imported' as const,
-      visitors: '4,658',
+      visitors: '768',
     },
     {
       id: 3,
@@ -67,7 +67,7 @@ export default function App() {
       features: ['Ca. 10-45 personen', 'Ca. 2 uur (flexibel)', 'Op maat samen te stellen', 'Speelbaar in Ter Aar of op locatie', '€30 p.p.'],
       image: owlImg,
       imageType: 'url' as const,
-      visitors: '3,890',
+      visitors: '1,236',
     },
     {
       id: 4,
@@ -77,7 +77,7 @@ export default function App() {
       features: ['2-6 teams van 2-5 personen', 'Ca. 60 minuten', 'Vanaf 16 jaar', 'Speelbaar in Ter Aar of op locatie', '€15 p.p. (min. 6 personen)'],
       image: runImg,
       imageType: 'url' as const,
-      visitors: '3,241',
+      visitors: '2,145',
     },
     {
       id: 5,
@@ -87,7 +87,7 @@ export default function App() {
       features: ['6-36 personen', 'Ca. 60 minuten', 'Vanaf 16 jaar', 'Speelbaar in Ter Aar of op locatie', '€10 p.p.'],
       image: memoryImg,
       imageType: 'url' as const,
-      visitors: '2,567',
+      visitors: '2,645',
     },
   ];
 
@@ -245,7 +245,7 @@ export default function App() {
 
           <div className="text-center mt-16 pt-16 border-t border-zinc-800">
             <p className="text-3xl text-zinc-500">
-              Meer dan <span className="font-bold text-blue-500">16.410+</span> tevreden deelnemers
+              Meer dan <span className="font-bold text-blue-500">8.000</span> tevreden deelnemers
             </p>
           </div>
         </div>

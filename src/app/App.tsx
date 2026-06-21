@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
 
 // Import logo and activity images
-import logoImg from 'figma:asset/746b9dab6f052f8202647c88f58f96713d5da4b1.png';
-import schoolImg from 'figma:asset/2d6840a5bde1cc173afb604c6f87f5600b415660.png';
-import boxerImg from 'figma:asset/8d8ac0768d11367a63c2e4e20061d09c16acec58.png';
+import logoImg from '../assets/746b9dab6f052f8202647c88f58f96713d5da4b1.png';
+import schoolImg from '../assets/2d6840a5bde1cc173afb604c6f87f5600b415660.png';
+import boxerImg from '../assets/8d8ac0768d11367a63c2e4e20061d09c16acec58.png';
+import memoryImg from '../assets/Muziek-Memory.png';
+import runImg from '../assets/Ren-je-hit.jpg'
+import owlImg from '../assets/Uil.jpg'
+
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 
 export default function App() {
@@ -61,7 +65,7 @@ export default function App() {
       subtitle: 'Teamuitje',
       description: 'De UIL is een veelzijdig teamevent waarin verschillende spellen en opdrachten samenkomen. Teams nemen het tegen elkaar op in een mix van puzzels, actie en samenwerking.',
       features: ['Ca. 10-45 personen', 'Ca. 2 uur (flexibel)', 'Op maat samen te stellen', 'Speelbaar in Ter Aar of op locatie', '€30 p.p.'],
-      image: 'https://images.unsplash.com/photo-1703045079677-6bf8d7dc0561?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvd2wlMjBlc2NhcGUlMjByb29tJTIwbXlzdGVyeXxlbnwxfHx8fDE3NzAwNDU3NzR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: owlImg,
       imageType: 'url' as const,
       visitors: '3,890',
     },
@@ -71,7 +75,7 @@ export default function App() {
       subtitle: 'Muziekspel',
       description: 'Teams testen hun muziekkennis in verschillende categorieën en proberen zo snel mogelijk het juiste jaartal te bepalen. Iedereen speelt tegelijk en dat zorgt voor veel energie en interactie.',
       features: ['2-6 teams van 2-5 personen', 'Ca. 60 minuten', 'Vanaf 16 jaar', 'Speelbaar in Ter Aar of op locatie', '€15 p.p. (min. 6 personen)'],
-      image: 'https://images.unsplash.com/photo-1758586326115-d4e9052b8f06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydW5uaW5nJTIwcmFjZSUyMGNvbXBldGl0aW9ufGVufDF8fHx8MTc3MDA0NTI2OHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: runImg,
       imageType: 'url' as const,
       visitors: '3,241',
     },
@@ -81,7 +85,7 @@ export default function App() {
       subtitle: 'Interactief muziekspel',
       description: 'Deelnemers combineren grote memoryonderdelen rondom muziek. Het spel vraagt om samenwerking, geheugen en een goed gevoel voor muziek.',
       features: ['6-36 personen', 'Ca. 60 minuten', 'Vanaf 16 jaar', 'Speelbaar in Ter Aar of op locatie', '€10 p.p.'],
-      image: 'https://images.unsplash.com/photo-1642784353173-11f8e2795cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMGdhbWUlMjBwYXJ0eXxlbnwxfHx8fDE3NzAwNDUyNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: memoryImg,
       imageType: 'url' as const,
       visitors: '2,567',
     },

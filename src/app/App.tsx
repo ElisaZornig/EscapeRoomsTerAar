@@ -264,16 +264,16 @@ export default function App() {
 
           <div className="grid md:grid-cols-3 gap-4">
             <a 
-              href="tel:+31612345678" 
+              href="tel:+31651235253"
               className="flex flex-col items-center gap-4 p-8 bg-zinc-950 hover:bg-zinc-900 transition-all border-t-4 border-blue-500 group focus:outline-none focus:ring-2 focus:ring-blue-500"
-              aria-label="Bel of WhatsApp naar +31 6 1234 5678"
+              aria-label="Bel of WhatsApp naar +31 6 5123 5253"
             >
               <div className="bg-blue-600 p-5 group-hover:bg-blue-500 transition-colors" aria-hidden="true">
                 <Phone className="w-8 h-8" />
               </div>
               <div className="text-center">
                 <div className="text-xs text-zinc-500 uppercase tracking-wider mb-2">Bel of WhatsApp</div>
-                <div className="font-semibold text-lg tracking-tight">+31 6 1234 5678</div>
+                <div className="font-semibold text-lg tracking-tight">+31 6 5123 5253</div>
               </div>
             </a>
 

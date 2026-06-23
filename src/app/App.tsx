@@ -6,7 +6,7 @@ import logoImg from '../assets/746b9dab6f052f8202647c88f58f96713d5da4b1.png';
 import schoolImg from '../assets/2d6840a5bde1cc173afb604c6f87f5600b415660.png';
 import boxerImg from '../assets/8d8ac0768d11367a63c2e4e20061d09c16acec58.png';
 import memoryImg from '../assets/Muziek-Memory.png';
-import runImg from '../assets/Ren-je-hit.jpg'
+import runImg from '../assets/ren-je-hit-trans.png'
 import owlImg from '../assets/Uil.jpg'
 
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
@@ -101,7 +101,28 @@ export default function App() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-zinc-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <img src={logoImg} alt="Escape Rooms Ter Aar logo" className="h-12 md:h-16" />
+          <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="shrink-0 flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              aria-label="Ga naar boven"
+          >
+            {/* Mobiel: compacte tekst */}
+            <div className="sm:hidden text-left leading-none">
+              <div className="text-black font-bold text-sm tracking-tight uppercase">
+                Escape Rooms
+              </div>
+              <div className="text-blue-500 font-bold text-sm tracking-tight uppercase">
+                Ter Aar
+              </div>
+            </div>
+
+            {/* Vanaf sm: volledige logo */}
+            <img
+                src={logoImg}
+                alt="Escape Rooms Ter Aar logo"
+                className="hidden sm:block h-12 md:h-16 w-auto object-contain"
+            />
+          </button>
           <div className="flex gap-8 items-center">
             <button 
               onClick={() => scrollToSection('activities')}

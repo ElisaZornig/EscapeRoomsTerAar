@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
+import { Phone, Mail, MapPin, ChevronDown, MessageCircle } from 'lucide-react';
 
 // Import logo and activity images
 import logoImg from '../assets/746b9dab6f052f8202647c88f58f96713d5da4b1.png';
@@ -283,18 +283,34 @@ export default function App() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-4">
-            <a 
-              href="tel:+31651235253"
-              className="flex flex-col items-center gap-4 p-8 bg-zinc-950 hover:bg-zinc-900 transition-all border-t-4 border-blue-500 group focus:outline-none focus:ring-2 focus:ring-blue-500"
-              aria-label="Bel of WhatsApp naar +31 6 5123 5253"
+          <div className="grid md:grid-cols-4 gap-4">
+            <a
+                href="tel:+31651235253"
+                className="flex flex-col items-center gap-4 p-8 bg-zinc-950 hover:bg-zinc-900 transition-all border-t-4 border-blue-500 group focus:outline-none focus:ring-2 focus:ring-blue-500"
+                aria-label="Bel naar +31 6 5123 5253"
             >
               <div className="bg-blue-600 p-5 group-hover:bg-blue-500 transition-colors" aria-hidden="true">
                 <Phone className="w-8 h-8" />
               </div>
               <div className="text-center">
-                <div className="text-xs text-zinc-500 uppercase tracking-wider mb-2">Bel of WhatsApp</div>
+                <div className="text-xs text-zinc-500 uppercase tracking-wider mb-2">Bel</div>
                 <div className="font-semibold text-lg tracking-tight">+31 6 5123 5253</div>
+              </div>
+            </a>
+
+            <a
+                href="https://wa.me/31651235253"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-4 p-8 bg-zinc-950 hover:bg-zinc-900 transition-all border-t-4 border-blue-500 group focus:outline-none focus:ring-2 focus:ring-blue-500"
+                aria-label="Stuur een WhatsApp bericht naar +31 6 5123 5253"
+            >
+              <div className="bg-blue-600 p-5 group-hover:bg-blue-500 transition-colors" aria-hidden="true">
+                <MessageCircle className="w-8 h-8" />
+              </div>
+              <div className="text-center">
+                <div className="text-xs text-zinc-500 uppercase tracking-wider mb-2">WhatsApp</div>
+                <div className="font-semibold text-lg tracking-tight">Stuur een bericht</div>
               </div>
             </a>
 
@@ -312,15 +328,21 @@ export default function App() {
               </div>
             </a>
 
-            <div className="flex flex-col items-center gap-4 p-8 bg-zinc-950 border-t-4 border-blue-500">
-              <div className="bg-blue-600 p-5" aria-hidden="true">
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Middelweg%205%2C%20Ter%20Aar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-4 p-8 bg-zinc-950 hover:bg-zinc-900 transition-all border-t-4 border-blue-500 group focus:outline-none focus:ring-2 focus:ring-blue-500"
+                aria-label="Open locatie Middelweg 5 Ter Aar in Google Maps"
+            >
+              <div className="bg-blue-600 p-5 group-hover:bg-blue-500 transition-colors" aria-hidden="true">
                 <MapPin className="w-8 h-8" />
               </div>
               <div className="text-center">
                 <div className="text-xs text-zinc-500 uppercase tracking-wider mb-2">Locatie</div>
-                <div className="font-semibold text-lg tracking-tight">Ter Aar</div>
+                <div className="font-semibold text-lg tracking-tight">Middelweg 5, Ter Aar</div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
